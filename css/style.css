@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Josefin+Sans&family=PT+Sans+Narrow&display=swap');
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999999999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #fff url(../img/loader.gif) no-repeat center center;
+  background-size: 50%;
+}
+#load-change{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999999999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #ffffff8f url(../img/load-change.gif) no-repeat center center;
+    background-size: 100px;
+    display: none;
+
+}
+#areas {
+	margin-top: 15px;
+	width: 100%;
+}
+
+
+body{
+font-family: 'PT Sans Narrow', sans-serif;
+/*font-family: 'Dosis', sans-serif;
+font-family: 'Josefin Sans', sans-serif;*/
+}
+.orange {
+    background-color: #FF9900;
+}
+
+.blue {
+    background-color: #33CCFF
+}
+.red {
+background-color: #F53636
+}
+
+
+td,
+th {
+
+    font-family: 'Josefin Sans', sans-serif;
+    width: 150px;
+    height: 45px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+thead tr {
+	height: 60px;
+	background: #33CCFF;
+    color: #fff;
+	font-size: 16px;
+}
+
+h1 {
+    color: #777;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 40px;
+}
+
+.live_totalcasesdata {
+    width: 100%;
+    margin: auto;
+}
+
+.all div {
+    color: #fff;
+    font-size: 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center; 
+    padding: 15px; 
+    margin-bottom: 20px;
+}
+
+.content-chart {
+	width: 100%;
+height: 500px;
+}
+
+canvas {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+
+}
+
+.upateTime {
+	font-size: 22px;
+	margin: 0px 0px 45px 198px;
+	color: #aaaaaa;
+	text-align: center;
+}
+
+
+table {
+    height: 90vh;
+    display: block;
+    overflow-y: scroll;
+}
+
+.Search {
+	    margin-top: 15px;
+}
+
+.Search input {
+width: 100%;
+    height: 40px;
+    padding-left: 10px;
+
+}
+.mobile-none {
+    display: block;
+}
+
+.pc-none{
+    display: none;
+}
+#bodyTable tr:hover {
+cursor: pointer;
+background-color: #ede3e3;
+}
+
+@media (max-width: 580px) {
+.all div {
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+
+ }
+
+table {
+    height: 45vh;
+}
+.mobile-none {
+    display: none;
+}
+.pc-none{
+    display: block;
+}
+.all {
+  padding-right: 3px;
+    padding-left: 3px;
+}
+
+}

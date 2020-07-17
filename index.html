@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width" />
+      <title>COVID-19 Tracker</title>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+
+   </head>
+   <body>
+      <!--=========== Preloader start =================== -->
+      <div id="preloader"></div>
+      <div id="load-change"></div>
+      <!--=========== Preloader End =================== -->
+      <div class="container-fluid">
+         <div class= "row">
+            <h1 class="pc-none">COVID-19 CORONAVIRUS PANDEMIC</h1>
+            <div class="col-md-12">
+               <div>
+                  <h1 class="mobile-none">COVID-19 CORONAVIRUS PANDEMIC</h1>
+                  <form method="get">
+                     <!--  select2 -->
+                     <select id="selectCountry" class="form-control select2" >
+                        <option id="eg" value="EG" selected>Egypt</option>
+                     </select>
+                  </form>
+                  <div class="upateTime"></div>
+               </div>
+               <div class="live_totalcasesdata">
+                  <div class="col-xs-4 all">
+                     <div class="orange">Confirmed <br><span id="Confirmed"></span></div>
+                  </div>
+                  <div class="col-xs-4 all">
+                     <div class="blue">Recovered <br><span id="Recovered"></span></div>
+                  </div>
+                  <div class="col-xs-4 all">
+                     <div class="red">Deaths <br><span id="Deaths"></span></div>
+                  </div>
+               </div>
+               <div class="clearfix"></div>
+               <div class="content-chart">
+                  <canvas id="canvas"></canvas>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/select2.min.js"></script>
+      <script src="js/moment.min.js"></script>
+      <script src="js/Chart.min.js"></script>
+      <script src="js/utils.js"></script>
+      <script src="js/enquire.min.js"></script>
+      <script src="js/main.js"></script> 
+   </body>
+</html>
